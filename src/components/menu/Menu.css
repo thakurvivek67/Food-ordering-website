@@ -1,0 +1,133 @@
+.container{
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+/* Form Styles */
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input,
+.select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.input:focus,
+.select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.btn-m {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-m:hover {
+    background-color: #0056b3;
+}
+
+/* List Styles */
+.heading-list {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.list-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.list:last-child {
+    border-bottom: none;
+}
+
+.value {
+    margin: 4px 0;
+}
+
+.edit,
+.delete {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.edit:hover {
+    background-color: #0056b3;
+}
+
+.delete {
+    background-color: #dc3545;
+}
+
+.delete:hover {
+    background-color: #c82333;
+}
+
+.button-group {
+    margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+
+    .form,
+    .list-container {
+        padding: 10px;
+    }
+
+    .btn-m,
+    .edit,
+    .delete {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    .input,
+    .select {
+        padding: 12px;
+        font-size: 16px;
+    }
+}

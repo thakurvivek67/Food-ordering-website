@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import "./LogIn.css";
 
 const LogIn = () => {
   const [inputs, setInputs] = useState({ email: '', password: '', confirmPassword: '' });
   //const [signUpMode, setSignUpMode] = useState(false); // Assuming you have a way to toggle this
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -31,12 +33,15 @@ const LogIn = () => {
         );
   
         const data = await response.json();
+        
+
   
         if (!response.ok) {
           throw new Error(data.error.message || "Something went wrong");
         }
   
         console.log("Registration successful:", data);
+        navigate("/menu");
       } catch (error) {
         console.error("Error during registration:", error.message);
       }
