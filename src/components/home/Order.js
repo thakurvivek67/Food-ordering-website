@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Navbar from '../navbar/Navbar';
+import './Order.css'; 
 
 const Order = () => {
   const [order, setOrder] = useState(null);
@@ -12,10 +13,8 @@ const Order = () => {
           "https://restaurant-472a5-default-rtdb.firebaseio.com/orders.json"
         );
         const data = response.data;
-        // Assuming data is an object where each key is an order ID and contains order details
         const orderArray = Object.values(data);
-        
-        // Here, we take the first order for example purposes; you can handle multiple orders as needed
+
         if (orderArray.length > 0) {
           setOrder(orderArray[0]);
         }
@@ -27,38 +26,34 @@ const Order = () => {
     fetchData();
   }, []);
 
-  // Check if order data is available
   if (!order) {
     return <div>Loading...</div>;
   }
 
   return (
-    <div>
-        <Navbar/>
+    <div className="order-page">
+      <Navbar />
       <h2>Order Details</h2>
-      <div>
-        <h3>Cart Items</h3>
-        <ul>
-          {order.cartItems.map((item, index) => (
-            <li key={index}>
-              <p>{item.name}</p>
-              <p>Amount: {item.amount} rs</p>
-              <p>Quantity: {item.quantity}</p>
-              <p>Total: {item.amount * item.quantity} rs</p>
-            </li>
-          ))}
-        </ul>
+      <div className="cart-items-container">
+        {order.cartItems.map((item, index) => (
+          <div className="cart-item" key={index}>
+            <p><strong>Name:</strong> {item.name}</p>
+            <p><strong>Amount:</strong> {item.amount} rs</p>
+            <p><strong>Quantity:</strong> {item.quantity}</p>
+            <p><strong>Total:</strong> {item.amount * item.quantity} rs</p>
+          </div>
+        ))}
       </div>
-      <div>
+      <div className="total-amount">
         <h3>Total Amount</h3>
         <p>{order.totalAmount} rs</p>
       </div>
-      <div>
+      <div className="user-details">
         <h3>User Details</h3>
-        <p>Name: {order.userDetails.name}</p>
-        <p>Email: {order.userDetails.email}</p>
-        <p>Mobile: {order.userDetails.mobile}</p>
-        <p>Address: {order.userDetails.address}</p>
+        <p><strong>Name:</strong> {order.userDetails.name}</p>
+        <p><strong>Email:</strong> {order.userDetails.email}</p>
+        <p><strong>Mobile:</strong> {order.userDetails.mobile}</p>
+        <p><strong>Address:</strong> {order.userDetails.address}</p>
       </div>
     </div>
   );

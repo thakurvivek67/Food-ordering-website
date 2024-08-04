@@ -1,0 +1,66 @@
+/* Container for the entire Order page */
+.order-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Heading for the Order Details */
+.order-page h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Container for cart items */
+.cart-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Style for each cart item box */
+.cart-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    width: calc(33.333% - 15px); /* Adjust width to fit three items per row with gap */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Style for the list of cart items */
+.cart-item p {
+    margin: 5px 0;
+}
+
+/* Style for the total amount section */
+.total-amount {
+    border-top: 2px solid #28a745;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style for the user details section */
+.user-details {
+    border-top: 2px solid #ddd;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 1.125rem;
+    color: #333;
+}
+
+.user-details p {
+    margin: 5px 0;
+}
+
+/* Ensure Navbar is styled properly (optional) */
+.navbar {
+    margin-bottom: 20px;
+}

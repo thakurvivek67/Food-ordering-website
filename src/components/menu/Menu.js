@@ -148,7 +148,7 @@ const Menu = () => {
             required
           />
 
-          <label htmlFor="category">Category</label>
+          <label htmlFor="category" className="label">Category</label>
           <select
             id="category"
             value={category}
