@@ -21,32 +21,33 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    width: 300px;
+    width: 400px;
     max-width: 100%;
 }
 
 /* Label styling */
-.label {
+.labelL {
     display: block;
     font-size: 14px;
     color: #333;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 /* Input field styling */
-.input {
+.inputL {
     width: 100%;
     padding: 12px;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 14px;
 }
 
 /* Button styling */
-.btn-l {
+.btn-L {
     width: 100%;
     padding: 12px;
+    margin-bottom: 7px;
     background-color: #007bff;
     /* Primary blue color */
     border: none;
@@ -58,7 +59,7 @@
 }
 
 /* Button hover effect */
-.btn-l:hover {
+.btn-L:hover {
     background-color: #0056b3;
     /* Darker blue on hover */
 }

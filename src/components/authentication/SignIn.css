@@ -6,12 +6,12 @@
   }
   
   /* Container styling */
-  .contanierS {
+  .containerS {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f5f5f5; /* Light background for the page */
+    background-color: #f5f5f5;
   }
   
   /* Form styling */
@@ -20,32 +20,33 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 400px;
     max-width: 100%;
   }
   
   /* Label styling */
-  .label {
+  .labelS {
     display: block;
     font-size: 14px;
     color: #333;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
   }
   
   /* Input styling */
-  .input {
+  .inputS {
     width: 100%;
     padding: 10px;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 14px;
   }
   
   /* Button styling */
-  .btn-s {
+  .btn-S {
     width: 100%;
     padding: 10px;
+    margin-bottom: 10px;
     background-color: #007bff; /* Blue background color */
     border: none;
     border-radius: 4px;
@@ -56,7 +57,7 @@
   }
   
   /* Button hover effect */
-  .btn-s:hover {
+  .btn-S:hover {
     background-color: #0056b3; /* Darker blue on hover */
   }
   

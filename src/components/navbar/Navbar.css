@@ -1,0 +1,46 @@
+/* Style for the Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+/* Style for the Restaurant Name */
+.navbar h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Style for the navigation links container */
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+/* Style for navigation links */
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Style for active navigation link */
+.nav-links .active {
+    background-color: #28a745;
+    /* Highlight color for active link */
+    color: #ffffff;
+}
+
+/* Style for navigation link hover effect */
+.nav-links a:hover {
+    background-color: #495057;
+    /* Darker background on hover */
+    color: #ffffff;
+}
